@@ -1,14 +1,18 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
+        <h1 className="text-3xl text-center">History Learning Tool</h1>
         <p className="text-center">
-          Chat with the agent to start making edits.
+          Welcome to the History Learning Tool. Navigate to different sections to start learning.
         </p>
+        <div className="flex justify-center space-x-4 mt-4">
+          <Link to="/figures" className="text-blue-500 underline">Figures</Link>
+          <Link to="/timelines" className="text-blue-500 underline">Timelines</Link>
+        </div>
       </div>
     </div>
   );
